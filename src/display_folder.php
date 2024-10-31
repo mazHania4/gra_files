@@ -101,8 +101,8 @@ error_reporting(E_ALL); ?>
                         </td>
                         <td><?= $item['is_folder'] ? "folder" : $item['extension'] ?></td>
                         <td><?= $item['owner_id'] ?></td>
-                        <td><?= formatDate($item['created_at']) ?></td>
-                        <td><?= formatDate($item['modified_at']) ?></td>
+                        <td><?= formatDate(isset($item['created_at'])? $item['created_at'] :'') ?></td>
+                        <td><?= formatDate(isset($item['modified_at'])? $item['modified_at'] :'') ?></td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>

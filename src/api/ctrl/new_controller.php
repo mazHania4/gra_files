@@ -20,10 +20,10 @@ class NewController {
             }
             $newFileSVC->insertNewFolder($name, $folderPath, $username);
         } else if ($type === 'file') {
-            if (!file_put_contents($newPath . ".txt", "")) {
+            if (!file_put_contents($newPath . ".txt", "-")) {
                 return "Error al crear el archivo.";
             }
-            $newFileSVC->insertNewFile($name, $folderPath . ".txt", $username);
+            $newFileSVC->insertNewFile($name, $folderPath, $username);
         }
         
         return "Elemento creado exitosamente.";

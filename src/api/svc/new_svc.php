@@ -13,7 +13,7 @@ class NewFileService {
 	
 
     public function insertNewFolder($name, $path, $username){
-        $new_id = $path . $name;
+        $new_id = $path .'/'. $name;
         $folderData = [
             '_id' => $new_id,
             'owner_id' => $username,
@@ -28,7 +28,7 @@ class NewFileService {
     }
 
     public function insertNewFile($name, $path, $username){
-        $new_id = $path . $name;
+        $new_id = $path .'/'. $name;
         $fileData = [
             '_id' => $new_id,
             'owner_id' => $username,
