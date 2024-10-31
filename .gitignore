@@ -1,0 +1,11 @@
+
+*.wt
+*.lock
+*.bson
+WiredTiger
+WiredTiger.turtle
+scripts/journal
+scripts/diagnostic.data
+scripts/.mongodb
+gra_files_storage/
+vendor/

@@ -1,0 +1,125 @@
+
+:root {
+    --primary-green: #2e8b57; /* Verde bosque */
+    --secondary-turquoise: #40e0d0; /* Turquesa */
+    --background-light: #f0f9f8; /* Fondo claro */
+    --text-dark: #2c3e50; /* Texto oscuro */
+    --error-red: #e74c3c; /* Rojo para mensajes de error */
+}
+
+body {
+    font-family: Courier, monospace;
+    background-color: var(--background-light);
+    color: var(--text-dark);
+}
+
+.form-container {
+    max-width: 400px;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos */
+h2 {
+    color: var(--primary-green);
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Botón principal */
+.btn-primary {
+    background-color: var(--primary-green);
+    border: none;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-turquoise);
+}
+
+/* Mensajes de error */
+.error-message {
+    color: var(--error-red);
+    font-size: 0.9em;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+/* Sidebar */
+.sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background-color: #006c4f;
+    color: white;
+    position: fixed;
+    height: 100vh;
+    padding-top: 1rem;
+}
+
+.sidebar .nav-link {
+    color: #a3d8c7;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #007a5e;
+    color: #ffffff;
+}
+
+.user-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+/* Content */
+.content {
+    margin-left: 250px;
+    background-color: #ffffff;
+    padding: 2rem;
+}
+
+.text-custom {
+    color: #006c4f;
+}
+
+.bg-custom {
+    background-color: #006c4f !important;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+

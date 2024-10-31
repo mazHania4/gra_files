@@ -1,0 +1,16 @@
+
+services:
+  web:
+    image: php:8.2-apache
+    volumes:
+      - ./src:/var/www/html
+      - ./gra_files_storage:/var/www/html/gra_files_storage
+    build: .
+    ports:
+      - "8080:80"
+  mongo:
+    image: mongo
+    volumes: 
+      - ./scripts/init_db.js:/scripts/init_db.js
+    ports:
+      - "27017:27017"
